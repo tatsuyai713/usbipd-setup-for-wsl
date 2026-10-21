@@ -1,0 +1,16 @@
+module            : ax88179_178a.ko (jumbo frames: FLAG_NOMAXMTU added to the ax88179_info driver_info only)
+kernel_release    : 6.18.35.2-microsoft-standard-WSL2+
+built_for_running : no shipped WSL kernel - built from a locally modified tree ('+' = uncommitted changes)
+source            : https://github.com/microsoft/WSL2-Linux-Kernel.git
+ref               : linux-msft-wsl-6.18.35.2 (+ local changes)
+commit            : 1bd4ed3d4ada (dirty)
+config            : local .config, not the config of the shipped WSL kernel (differs from the 6.18.40.1 /proc/config.gz in ~1467 options)
+patch             : manual edit of drivers/net/usb/ax88179_178a.c (no jumbo_patch modinfo marker)
+toolchain         : gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+built_on          : 2026-07-08 by tatsuyai (committed as d8c55e5 "Add ko file for latest WSL")
+vermagic          : 6.18.35.2-microsoft-standard-WSL2+ SMP preempt mod_unload modversions
+versioned_imports : 63
+crc_verification  : NOT compatible with the shipped 6.18.40.1 kernel (50 of 63 symbol CRCs differ, including module_layout).
+                    Loadable only on a kernel built from the same tree and config, i.e. one whose `uname -r` is exactly
+                    6.18.35.2-microsoft-standard-WSL2+ . Kept for reference; rebuild with build_ko.sh for shipped kernels.
+stripped          : no (contains debug info, 841528 bytes)

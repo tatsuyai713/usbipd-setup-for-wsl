@@ -1,0 +1,14 @@
+module            : ax88179_178a.ko (jumbo frames: FLAG_NOMAXMTU, max_mtu 4088)
+kernel_release    : 6.18.40.1-microsoft-standard-WSL2
+built_for_running : yes (kernel running at build time: 6.18.40.1-microsoft-standard-WSL2)
+source            : https://github.com/microsoft/WSL2-Linux-Kernel.git
+ref               : linux-msft-wsl-6.18.40.1
+commit            : 14794180686c2fb6307fbe359c359bec765249f3
+config            : /proc/config.gz
+patch             : ko/patches/apply-jumbo-patch.sh (resulting diff: jumbo.patch)
+toolchain         : gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+built_on          : 2026-10-01T14:15:25+09:00 by tatsuyai
+vermagic          : 6.18.40.1-microsoft-standard-WSL2 SMP preempt mod_unload modversions 
+versioned_imports : 63 (60 CRCs computed from source, rest taken from the running kernel's modules)
+crc_verification  : verified: source-computed CRCs match the running kernel 6.18.40.1-microsoft-standard-WSL2
+stripped          : strip --strip-debug (size 58008 bytes)
